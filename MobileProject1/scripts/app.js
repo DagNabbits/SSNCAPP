@@ -9,7 +9,7 @@
     window.APP = {
       models: {
         home: {
-          title: 'Home'
+          title: 'Performance'
         },
         history: {
             title: 'History'
@@ -48,6 +48,7 @@
         // the application needs to know which view to load first
         initial: 'views/home.html'
       });
+
 
     }, false);
 

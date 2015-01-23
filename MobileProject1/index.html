@@ -11,41 +11,65 @@
     <script src="kendo/js/kendo.mobile.min.js"></script>
 
     <script src="scripts/app.js"></script>
-
+    <link href="styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="styles/ThemeStyle.css" rel="stylesheet" />
+    <script src="scripts/login.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
- Commit
+
+    <!--Main layout-->
   <div data-role="layout" data-id="main">
     <div data-role="header">
       <div data-role="navbar">
-        <span data-role="view-title"></span>
+          <div class="HeaderBar">
+              <div class="d-panel-header">
+                  <span data-role="view-title"></span>
+              </div>        
+          </div>
         <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
       </div>
     </div>
-
-    <!-- application views will be rendered here -->
-    
   </div>
 
-  <!-- application drawer and contents -->
-  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Navigation">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"></span>
-      </div>
-    </div>
-    <ul data-role="listview">
-      <li>
-        <a href="views/home.html">Performance</a>
-      </li>
-      <li>
-          <a href="views/History.html">History</a>
-      </li>
-      <li>
-          <a href="views/Valuations.html">Valuations</a>
-      </li>
-    </ul>
-  </div>       
+    <!--Login layout-->
+    <div data-role="layout" data-id="login">
+        <div data-role="header">
+            <div data-role="navbar">
+                <div class="HeaderBar">
+                </div>
+            </div>
+        </div>
+    </div>    
+        <!-- application drawer and contents -->
+        <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Menu">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </div>
+            <ul data-role="listview">
+                <li>
+                    <a href="views/home.html">Performance</a>
+                </li>
+                <li>
+                    <a href="views/History.html">History</a>
+                </li>
+                <li>
+                    <a href="views/settings.html">Settings</a>
+                </li>
+                <li>
+                    <a href="views/Login.html">Log Out</a>
+                </li>
+            </ul>
+        </div>
 
 </body>
 </html>
